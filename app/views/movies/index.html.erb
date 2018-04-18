@@ -1,6 +1,9 @@
 <div class="container">
 <h1>Nic Cage</h1>
     <% @movies.each do |movie| %>
-      <h3><%= movie.name %></h3>
+      <h3><%= link_to movie.name, movie_path(movie) %></h3>
       <%end%>
 </div>
+
+
+<p><%= link_to "Add a New Movie", new_movie_path(@movie) %></p>

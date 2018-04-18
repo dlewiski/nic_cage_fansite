@@ -1,2 +1,13 @@
-<h1>Welcome to our boiii Nic Cage fan page</h1>
-<img src="https://iw.ilovevaquero.com/images/iskusstvo-i-razvlecheniya/nikolas-kejdzh-nicolas-cage-biografiya-filmografiya-i-lichnaya-zhizn-foto-luchshie-filmi-s-uchastiem-aktera_2.jpg" alt="featured nick cage photo">
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to our boiii Nic Cage fan page</h1>
+  </div>
+</div>
+<div class="container featured">
+  <h1>Featured Movies</h1>
+  <% @movies.each do |movie| %>
+    <h3><%= link_to movie.name, movie_path(movie) %></h3>
+    <h4>"<%= movie.description %>"</h4>
+    <h4>Rating: <%= movie.rating %></h4>
+    <%end%>
+</div>

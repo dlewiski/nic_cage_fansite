@@ -5,6 +5,31 @@
   height: 250px;
   border-radius: 50%;
 }
+
+body {
+  background-image: url("https://ih0.redbubble.net/image.432042135.2071/flat,800x800,075,t.jpg");
+  background-repeat:repeat;
+}
+
+.jumbotron {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.featured, #facts {
+  background-color: white;
+  width: 1200px;
+  height: auto;
+  border-radius: 5%;
+  text-align: center;
+}
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

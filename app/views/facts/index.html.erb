@@ -1,0 +1,8 @@
+<div class="container" id="facts">
+  <h2>Facts about our boiii</h2>
+
+  <% @facts.each do |fact| %>
+  <h3>Did you know? <%= fact.title%></h3>
+  <h3>Rating: <%= fact.rating%></h3>
+  <% end %>
+</div>
