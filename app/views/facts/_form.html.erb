@@ -1,0 +1,9 @@
+<%= render('layouts/errors', :object => @fact) %>
+
+<%= form_for [@fact] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :rating %>
+  <%= f.text_field :rating %>
+  <p><%= f.submit %></p>
+<% end %>

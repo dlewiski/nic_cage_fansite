@@ -12,6 +12,7 @@ class MoviesController < ApplicationController
   def create
     @movie = Movie.new(movie_params)
     if @movie.save
+      flash[:notice] = "Movie successfully added!"
       redirect_to  movies_path
     else
       render :new
@@ -31,4 +32,4 @@ class MoviesController < ApplicationController
   def movie_params
     params.require(:movie).permit(:name, :description, :rating)
   end
-end
+end 

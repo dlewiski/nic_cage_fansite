@@ -5,4 +5,6 @@
   <h3>Did you know? <%= fact.title%></h3>
   <h3>Rating: <%= fact.rating%></h3>
   <% end %>
+  <p><%= link_to "Add a New Fact", new_fact_path(@fact) %></p>
+
 </div>

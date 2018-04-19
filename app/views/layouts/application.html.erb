@@ -36,6 +36,8 @@
         </ul>
       </div>
     </nav>
+    <%= flash[:alert] %>
+    <%= flash[:notice] %>
     <%= yield %>
   </body>
 </html>

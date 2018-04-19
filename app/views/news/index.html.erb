@@ -1,5 +1,7 @@
 <h2>News about our boiiii</h2>
 
-<% @news.each do |news| %>
-<h3><%= news.title %></h3>
+<% @news.each do |i| %>
+<h3><%= i.title %></h3>
 <% end %>
+
+<p><%= link_to "Add More News", new_news_path(@news) %></p>

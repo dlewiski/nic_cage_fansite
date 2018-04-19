@@ -1,0 +1,12 @@
+<h1>New News</h1>
+
+<%= render "news/form" %>
+
+<% if @news.errors.any? %>
+  <h3>Oops there were some errors. Please try again:</h3>
+  <ul>
+    <% @news.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
